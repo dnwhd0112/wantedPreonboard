@@ -16,6 +16,7 @@
 		E1E1BA3D29B5910A009BA095 /* PreonboardWantedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1BA3C29B5910A009BA095 /* PreonboardWantedTests.swift */; };
 		E1E1BA4729B5910A009BA095 /* PreonboardWantedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1BA4629B5910A009BA095 /* PreonboardWantedUITests.swift */; };
 		E1E1BA4929B5910A009BA095 /* PreonboardWantedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1BA4829B5910A009BA095 /* PreonboardWantedUITestsLaunchTests.swift */; };
+		E1E1BA5629B5DCAC009BA095 /* ImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1BA5529B5DCAC009BA095 /* ImageList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E1E1BA4229B5910A009BA095 /* PreonboardWantedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreonboardWantedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E1BA4629B5910A009BA095 /* PreonboardWantedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreonboardWantedUITests.swift; sourceTree = "<group>"; };
 		E1E1BA4829B5910A009BA095 /* PreonboardWantedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreonboardWantedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1E1BA5529B5DCAC009BA095 /* ImageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				E1E1BA2E29B5910A009BA095 /* Assets.xcassets */,
 				E1E1BA3029B5910A009BA095 /* LaunchScreen.storyboard */,
 				E1E1BA3329B5910A009BA095 /* Info.plist */,
+				E1E1BA5529B5DCAC009BA095 /* ImageList.swift */,
 			);
 			path = PreonboardWanted;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1E1BA2A29B59108009BA095 /* ViewController.swift in Sources */,
+				E1E1BA5629B5DCAC009BA095 /* ImageList.swift in Sources */,
 				E1E1BA2629B59108009BA095 /* AppDelegate.swift in Sources */,
 				E1E1BA2829B59108009BA095 /* SceneDelegate.swift in Sources */,
 			);

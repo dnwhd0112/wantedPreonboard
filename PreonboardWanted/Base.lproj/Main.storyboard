@@ -1,24 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PreonboardWanted" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tray" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pfV-0W-gvR">
+                                <rect key="frame" x="10" y="71" width="150" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="RNc-S5-MXu"/>
+                                    <constraint firstAttribute="height" constant="100" id="t2a-TB-31d"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-gH-Hev">
+                                <rect key="frame" x="321" y="102" width="62" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                <connections>
+                                    <action selector="loadFirstImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTP-Zx-w7F"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tray" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="h7B-TR-qYj">
+                                <rect key="frame" x="10" y="181" width="150" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Zjn-gu-jJJ"/>
+                                    <constraint firstAttribute="width" constant="150" id="ckL-9k-5Kz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbc-ZA-kIr">
+                                <rect key="frame" x="321" y="211.66666666666666" width="62" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                <connections>
+                                    <action selector="loadSecondImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mhe-8P-XUG"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tray" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lBb-nn-7gq">
+                                <rect key="frame" x="10" y="291" width="150" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="L1c-2c-Z3G"/>
+                                    <constraint firstAttribute="width" constant="150" id="UML-wJ-R6N"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09w-wD-7xg">
+                                <rect key="frame" x="321" y="321.66666666666669" width="62" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                <connections>
+                                    <action selector="loadThirdImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N7y-BI-Faa"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tray" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BKa-yJ-9Sn">
+                                <rect key="frame" x="10" y="401" width="150" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Bqv-bL-Db7"/>
+                                    <constraint firstAttribute="width" constant="150" id="xxl-2a-nHt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPK-0j-UnA">
+                                <rect key="frame" x="321" y="431.66666666666669" width="62" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                <connections>
+                                    <action selector="loadForthImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hmi-XE-zs7"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tray" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dWz-n8-gmG">
+                                <rect key="frame" x="10" y="511" width="150" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Csn-qf-GgE"/>
+                                    <constraint firstAttribute="height" constant="100" id="wnf-wz-snk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLs-Hi-Vgk">
+                                <rect key="frame" x="321" y="541.66666666666663" width="62" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                <connections>
+                                    <action selector="loadfiveImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lJc-0s-82V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6t-tN-1jX">
+                                <rect key="frame" x="124.66666666666669" y="619" width="144" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Load All Images"/>
+                                <connections>
+                                    <action selector="loadAllImages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pX1-JA-ZI0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h7B-TR-qYj" firstAttribute="centerX" secondItem="pfV-0W-gvR" secondAttribute="centerX" id="4BZ-0T-2wY"/>
+                            <constraint firstItem="ndf-gH-Hev" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="4zN-Y8-lGh"/>
+                            <constraint firstItem="ndf-gH-Hev" firstAttribute="centerY" secondItem="pfV-0W-gvR" secondAttribute="centerY" id="Avq-Hn-MLw"/>
+                            <constraint firstItem="BKa-yJ-9Sn" firstAttribute="centerX" secondItem="lBb-nn-7gq" secondAttribute="centerX" id="CKc-Jb-i8C"/>
+                            <constraint firstItem="Hbc-ZA-kIr" firstAttribute="centerX" secondItem="ndf-gH-Hev" secondAttribute="centerX" id="Dym-sv-5Ye"/>
+                            <constraint firstItem="GLs-Hi-Vgk" firstAttribute="centerY" secondItem="dWz-n8-gmG" secondAttribute="centerY" id="E25-77-VtW"/>
+                            <constraint firstItem="lBb-nn-7gq" firstAttribute="top" secondItem="h7B-TR-qYj" secondAttribute="bottom" constant="10" id="KCF-hr-5Ej"/>
+                            <constraint firstItem="oPK-0j-UnA" firstAttribute="centerY" secondItem="BKa-yJ-9Sn" secondAttribute="centerY" id="N6n-I0-RF4"/>
+                            <constraint firstItem="F6t-tN-1jX" firstAttribute="top" secondItem="dWz-n8-gmG" secondAttribute="bottom" constant="10" id="P4m-PU-irl"/>
+                            <constraint firstItem="h7B-TR-qYj" firstAttribute="top" secondItem="pfV-0W-gvR" secondAttribute="bottom" constant="10" id="SGF-h8-g0S"/>
+                            <constraint firstItem="BKa-yJ-9Sn" firstAttribute="top" secondItem="lBb-nn-7gq" secondAttribute="bottom" constant="10" id="Xqa-wB-BIZ"/>
+                            <constraint firstItem="dWz-n8-gmG" firstAttribute="centerX" secondItem="BKa-yJ-9Sn" secondAttribute="centerX" id="bGa-Uf-QeA"/>
+                            <constraint firstItem="pfV-0W-gvR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="cxa-HI-Yi9"/>
+                            <constraint firstItem="09w-wD-7xg" firstAttribute="centerY" secondItem="lBb-nn-7gq" secondAttribute="centerY" id="hts-Mp-odl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ndf-gH-Hev" secondAttribute="trailing" constant="10" id="l2E-Wp-gB9"/>
+                            <constraint firstItem="F6t-tN-1jX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l4d-s4-9pQ"/>
+                            <constraint firstItem="oPK-0j-UnA" firstAttribute="centerX" secondItem="09w-wD-7xg" secondAttribute="centerX" id="m6q-Sc-jSd"/>
+                            <constraint firstItem="pfV-0W-gvR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="mpP-AY-a7f"/>
+                            <constraint firstItem="09w-wD-7xg" firstAttribute="centerX" secondItem="Hbc-ZA-kIr" secondAttribute="centerX" id="ngx-op-jJY"/>
+                            <constraint firstItem="GLs-Hi-Vgk" firstAttribute="centerX" secondItem="oPK-0j-UnA" secondAttribute="centerX" id="q0b-f5-er1"/>
+                            <constraint firstItem="dWz-n8-gmG" firstAttribute="top" secondItem="BKa-yJ-9Sn" secondAttribute="bottom" constant="10" id="xDR-Gz-kQr"/>
+                            <constraint firstItem="lBb-nn-7gq" firstAttribute="width" secondItem="pfV-0W-gvR" secondAttribute="width" id="xmF-G0-Fu0"/>
+                            <constraint firstItem="lBb-nn-7gq" firstAttribute="centerX" secondItem="pfV-0W-gvR" secondAttribute="centerX" id="yBg-gS-4fp"/>
+                            <constraint firstItem="Hbc-ZA-kIr" firstAttribute="centerY" secondItem="h7B-TR-qYj" secondAttribute="centerY" id="yaS-0M-FRd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4zN-Y8-lGh"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="firstImageView" destination="pfV-0W-gvR" id="uIa-Pc-JrT"/>
+                        <outlet property="fiveImageView" destination="dWz-n8-gmG" id="knU-D9-sHE"/>
+                        <outlet property="forthImageView" destination="BKa-yJ-9Sn" id="nhJ-ev-QvO"/>
+                        <outlet property="secondImageView" destination="h7B-TR-qYj" id="YTv-dW-lFJ"/>
+                        <outlet property="thirdImageView" destination="lBb-nn-7gq" id="BBf-5a-TcH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="92" y="-34"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tray" catalog="system" width="128" height="88"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
